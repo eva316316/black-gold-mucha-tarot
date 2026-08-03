@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>黑金慕夏塔羅占卜｜看見此刻的指引</title>
+  <meta name="description" content="靜下心來，透過慕夏塔羅的單張或三張牌陣，獲得此刻需要的細緻指引。">
+  <meta property="og:title" content="黑金慕夏塔羅占卜">
+  <meta property="og:description" content="靜心・提問・看見此刻的指引">
+  <meta property="og:image" content="og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="黑金塔羅占卜首頁">
+        <span class="brand-mark">☾</span><span>黑金塔羅</span>
+      </a>
+      <span class="header-note">MUCHA TAROT READING</span>
+    </header>
+
+    <section class="hero" id="top">
+      <div class="orb orb-one"></div><div class="orb orb-two"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> MUCHA TAROT <span></span></p>
+        <h1>讓牌面，照見<br><em>此刻的你</em></h1>
+        <p class="intro">放慢呼吸，在心中留下一個問題。<br class="desktop-break">穿越繁花與光影，聽見直覺溫柔的回聲。</p>
+      </div>
+      <div class="hero-card-stage" aria-hidden="true">
+        <div class="halo halo-a"></div><div class="halo halo-b"></div>
+        <div class="hero-card shadow-card"></div>
+        <div class="hero-card main-card mucha-hero-card"><img src="mucha/moon.webp" alt=""></div>
+        <span class="spark spark-a">✦</span><span class="spark spark-b">✧</span><span class="spark spark-c">·</span>
+      </div>
+    </section>
+
+    <section class="reading-section" aria-labelledby="reading-title">
+      <div class="reading-heading">
+        <p class="section-number">01</p>
+        <div><p class="eyebrow left"><span></span> YOUR READING</p><h2 id="reading-title">靜心，選擇你的牌陣</h2></div>
+        <p class="privacy-note">採用慕夏塔羅展示牌面・正位直覺解讀</p>
+      </div>
+
+      <div class="reading-panel">
+        <div class="controls">
+          <label for="question">此刻，你想詢問什麼？ <small>選填</small></label>
+          <textarea id="question" placeholder="例如：我該如何看待眼前的選擇？" rows="3" maxlength="120"></textarea>
+          <span class="character-count" id="character-count">0 / 120</span>
+          <fieldset>
+            <legend>選擇牌陣</legend>
+            <div class="spread-options">
+              <button type="button" class="spread-option active" id="spread-one" aria-pressed="true">
+                <span class="mini-cards one"><i></i></span><span><strong>單張指引</strong><small>聚焦當下核心訊息</small></span><b>01</b>
+              </button>
+              <button type="button" class="spread-option" id="spread-three" aria-pressed="false">
+                <span class="mini-cards three"><i></i><i></i><i></i></span><span><strong>三張牌陣</strong><small>此刻・看見・前行</small></span><b>03</b>
+              </button>
+            </div>
+          </fieldset>
+          <button class="draw-button" type="button" id="draw-button"><span>開始抽牌</span><i aria-hidden="true">✦</i></button>
+          <p class="draw-hint">深呼吸三次，準備好時按下按鈕</p>
+        </div>
+
+        <div class="result-area" id="result-area" aria-live="polite" aria-busy="false">
+          <div class="empty-state">
+            <div class="deck"><span>✦</span><i>☾</i></div>
+            <p>你的牌正在等待</p><small>選擇牌陣，讓直覺帶領你</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>✦</span>
+      <p>塔羅提供觀看事情的新角度，重要決定仍請相信你的理性與選擇。<br>牌面展示素材來源：<a href="https://www.books.com.tw/products/0011034687" target="_blank" rel="noreferrer">《慕夏塔羅》商品資料頁</a></p>
+      <span>✦</span>
+    </footer>
+  </main>
+</body>
+</html>
